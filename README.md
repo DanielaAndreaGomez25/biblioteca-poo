@@ -40,3 +40,4 @@ Aquí se muestra una captura del programa funcionando.
 
 
 ![alt text](image.png)
+![alt text](image-1.png)
