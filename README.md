@@ -17,6 +17,35 @@ Proyecto desarrollado en Java utilizando Maven que implementa un sistema de bibl
 * Mostrar información de los libros
 
 
+## Instrucciones para ejecutar el proyecto
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/DanielaAndreaGomez25/biblioteca-poo.git
+```
+
+2. Entrar al proyecto:
+
+```bash
+cd biblioteca-poo
+```
+
+3. Compilar el proyecto con Maven:
+
+```bash
+mvn compile
+```
+
+4. Ejecutar el programa:
+
+```bash
+mvn exec:java -Dexec.mainClass="com.biblioteca.Main"
+```
+
+
+
+
 ## Digrama de Clases
 <img width="223" height="341" alt="image" src="https://github.com/user-attachments/assets/58211d92-827d-43e9-9571-6029929821eb" />
 
