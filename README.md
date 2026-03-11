@@ -17,34 +17,5 @@ Proyecto desarrollado en Java utilizando Maven que implementa un sistema de bibl
 * Mostrar información de los libros
 
 
-## Digrama de Clases 
-
-@startuml
-
-class Libro {
-  - titulo : String
-  - autor : String
-  - ejemplares : int
-  - prestados : int
-  + prestamo() : boolean
-  + devolucion() : boolean
-  + toString() : String
-}
-
-class LibroTexto {
-  - curso : String
-}
-
-class LibroTextoUNIAC {
-  - facultad : String
-}
-
-class Novela {
-  - tipo : String
-}
-
-Libro <|-- LibroTexto
-LibroTexto <|-- LibroTextoUNIAC
-Libro <|-- Novela
-
-@enduml
+## Digrama de Clases
+<img width="223" height="341" alt="image" src="https://github.com/user-attachments/assets/58211d92-827d-43e9-9571-6029929821eb" />
