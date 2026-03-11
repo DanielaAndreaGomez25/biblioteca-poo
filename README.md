@@ -16,21 +16,6 @@ Proyecto desarrollado en Java utilizando Maven que implementa un sistema de bibl
 * Realizar devolución de libros
 * Mostrar información de los libros
 
-## Cómo ejecutar el proyecto
-
-1. Clonar el repositorio
-
-git clone https://github.com/usuario/biblioteca.git
-
-2. Entrar a la carpeta del proyecto
-
-cd biblioteca
-
-3. Compilar
-
-mvn compile
-
-4. Ejecutar
 
 mvn exec:java -Dexec.mainClass="com.biblioteca.Main"
 
@@ -41,3 +26,46 @@ Aquí se muestra una captura del programa funcionando.
 
 ![alt text](image.png)
 ![alt text](image-1.png)
+
+
+
+
+
+## Diagrama UML
+
+```text
++---------------------------+
+|           Libro           |
++---------------------------+
+| - titulo : String         |
+| - autor : String          |
+| - ejemplares : int        |
+| - prestados : int         |
++---------------------------+
+| + prestamo() : boolean    |
+| + devolucion() : boolean  |
+| + toString() : String     |
++---------------------------+
+            ▲
+            |
++---------------------------+
+|        LibroTexto         |
++---------------------------+
+| - curso : String          |
++---------------------------+
+            ▲
+            |
++------------------------------+
+|       LibroTextoUNIAC        |
++------------------------------+
+| - facultad : String          |
++------------------------------+
+
+            ▲
+            |
++---------------------------+
+|          Novela           |
++---------------------------+
+| - tipo : String           |
++---------------------------+
+```
