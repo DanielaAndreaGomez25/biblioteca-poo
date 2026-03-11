@@ -1,3 +1,10 @@
+## Integrantes
+
+Trabajo realizado por:
+- Daniela Andrea Gomez
+- Juan jose Muñoz
+
+
 # Sistema de Gestión de Biblioteca
 
 Proyecto desarrollado en Java utilizando Maven que implementa un sistema de biblioteca aplicando los principios de Programación Orientada a Objetos (POO): abstracción, encapsulamiento y herencia.
