@@ -106,3 +106,6 @@ public boolean disponible() {
 ```
 
 Este método permite saber si aún hay ejemplares disponibles para prestar.
+
+
+Actualización final del proyecto
