@@ -17,55 +17,34 @@ Proyecto desarrollado en Java utilizando Maven que implementa un sistema de bibl
 * Mostrar información de los libros
 
 
-mvn exec:java -Dexec.mainClass="com.biblioteca.Main"
+## Digrama de Clases 
 
-## Ejecución del programa
+@startuml
 
-Aquí se muestra una captura del programa funcionando.
+class Libro {
+  - titulo : String
+  - autor : String
+  - ejemplares : int
+  - prestados : int
+  + prestamo() : boolean
+  + devolucion() : boolean
+  + toString() : String
+}
 
+class LibroTexto {
+  - curso : String
+}
 
-![alt text](image.png)
-![alt text](image-1.png)
+class LibroTextoUNIAC {
+  - facultad : String
+}
 
+class Novela {
+  - tipo : String
+}
 
+Libro <|-- LibroTexto
+LibroTexto <|-- LibroTextoUNIAC
+Libro <|-- Novela
 
-
-
-## Diagrama UML
-
-```text
-+---------------------------+
-|           Libro           |
-+---------------------------+
-| - titulo : String         |
-| - autor : String          |
-| - ejemplares : int        |
-| - prestados : int         |
-+---------------------------+
-| + prestamo() : boolean    |
-| + devolucion() : boolean  |
-| + toString() : String     |
-+---------------------------+
-            ▲
-            |
-+---------------------------+
-|        LibroTexto         |
-+---------------------------+
-| - curso : String          |
-+---------------------------+
-            ▲
-            |
-+------------------------------+
-|       LibroTextoUNIAC        |
-+------------------------------+
-| - facultad : String          |
-+------------------------------+
-
-            ▲
-            |
-+---------------------------+
-|          Novela           |
-+---------------------------+
-| - tipo : String           |
-+---------------------------+
-```
+@enduml
